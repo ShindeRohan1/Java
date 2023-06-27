@@ -1,0 +1,19 @@
+class S2 
+{
+	static public void demo(int a)
+	{
+		if(a == 1)
+		{
+			return;
+		}
+		System.out.println(a);
+		demo(--a);
+	}
+
+	
+	public static void main(String[] args) 
+	{
+		demo(10);
+		
+	}
+}

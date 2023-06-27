@@ -1,0 +1,31 @@
+class check2 
+{
+	static int n = 32;
+	public void demo()
+	{
+		
+	}
+	static public void sdemo2()
+	{ 
+		System.out.println("n");
+	}
+	static public void sdemo()
+	{ 
+		System.out.println(n);
+		sdemo2()
+	}
+	static
+	{
+		
+		
+	}
+
+	
+	
+	public static void main(String[] args) 
+	{
+		
+	
+
+	}
+}

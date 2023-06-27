@@ -1,0 +1,18 @@
+class CubeQ2 
+{
+	public static int cube(int no)
+	{
+		int cb = 0;
+		cb = no * no * no;
+		return cb;
+	}
+
+	public static void main(String[] args) 
+	{
+		int number = 3;
+		int cb = 0;
+
+		cb = cube(number);
+		System.out.println(cb);
+	}
+}

@@ -1,0 +1,53 @@
+class Check10
+{
+	static int a = 10;
+
+	Check10()
+	{
+		System.out.println("inside constructor"+a);
+		System.out.println("inside constructor"+Check10.a);
+		System.out.println("inside constructor"+this.a);
+
+		stest();
+		Check10.stest();
+		
+
+	}
+	{
+		System.out.println("inside non static block"+a);
+		System.out.println("inside non static block"+Check10.a);
+		System.out.println("inside non static block"+this.a);
+		
+
+	}
+	public void test(){
+		System.out.println("inside non static method"+a);
+		System.out.println("inside non static method"+Check10.a);
+		System.out.println("inside non static method"+this.a);
+		
+
+	}
+	static
+	{
+		Check10 obj = new Check10();
+
+		System.out.println(a);
+		System.out.println(Check10.a);
+		System.out.println(obj.a);
+
+
+	}
+	static public void stest()
+	{
+		System.out.println("inside static stest methosd");
+	}
+		
+	public static void main(String[] args) 
+	{
+		Check10 obj = new Check10();
+		obj.test();
+		System.out.println(a);
+		System.out.println(Check10.a);
+		System.out.println(obj.a);
+	}
+}

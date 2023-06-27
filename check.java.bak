@@ -1,0 +1,28 @@
+class check 
+{
+	int n = 32;
+	public void demo()
+	{
+		System.out.println("inside demo");
+	}
+
+	static public void sdemo()
+	{
+		System.out.println(obj.n);
+		this.demo();
+	}
+	static
+	{
+		System.out.println(this.n);
+		this.demo();
+	}
+
+	
+	
+	public static void main(String[] args) 
+	{
+		
+	sdemo();
+
+	}
+}

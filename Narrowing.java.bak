@@ -1,0 +1,9 @@
+class Narrowing 
+{
+	public static void main(String[] args) 
+	{
+		float fl = 128.9f;
+		int i = (int)fl;
+		System.out.println(i);
+	}
+}

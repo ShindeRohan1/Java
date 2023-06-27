@@ -1,0 +1,16 @@
+class S1 
+{
+	static 
+	{
+		demo();
+		S1.demo();
+	}
+	static public void demo()
+	{
+	System.out.println("Inside demo");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

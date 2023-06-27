@@ -1,0 +1,40 @@
+class P9
+{
+	public static void main(String[] args) 
+	{
+		int physics = 30;
+		int chemistry = 88;
+		int math = 90;
+		int bio = 50;
+
+		if(physics < 35 || chemistry < 35 || math < 35 || bio < 35)
+		{
+			System.out.println("fail");
+		}
+		else
+		{
+			int total = physics + chemistry + math + bio;
+			float  per = total / 4;
+			System.out.println(per);
+			if (per > 75)
+			{
+				System.out.println("distinction");
+			}
+			else if (per > 60)
+			{
+				System.out.println("first class");
+			}
+			else if (per > 50)
+			{
+				System.out.println("second class");
+			}
+			else
+			{
+				System.out.println("pass");
+			}
+			
+			
+		}
+		
+	}
+}

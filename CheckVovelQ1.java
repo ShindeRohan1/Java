@@ -1,0 +1,35 @@
+class CheckVovelQ1 
+{
+
+	public static boolean checkVovel(char ch)
+		{
+			if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+
+		}
+	public static void main(String[] args) 
+	{
+		char c = 'i';
+
+		boolean b = false;
+
+		b = checkVovel(c);
+
+		if(b == true)
+		{
+			System.out.println("vovel");
+		}
+		else
+		{
+			System.out.println("not vovel");
+		}
+
+
+	}
+}
